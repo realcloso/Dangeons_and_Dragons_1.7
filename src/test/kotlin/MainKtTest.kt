@@ -2,7 +2,6 @@ package test.kotlin
 
 import com.example.d_e_d_by_closo.entities.characters.Character
 import com.example.d_e_d_by_closo.entities.characters.CharacterRace
-import com.example.d_e_d_by_closo.usecases.RaceBonusApplier
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

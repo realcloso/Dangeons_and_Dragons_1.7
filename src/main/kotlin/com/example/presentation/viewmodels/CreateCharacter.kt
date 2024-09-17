@@ -1,8 +1,7 @@
-package com.example.presentation.viewmodels
+/*package com.example.presentation.viewmodels
 
 import com.example.d_e_d_by_closo.entities.characters.Character
 import com.example.d_e_d_by_closo.entities.characters.CharacterRace
-import com.example.d_e_d_by_closo.usecases.RaceBonusApplier
 
 class CreateCharacter {
 
@@ -20,3 +19,4 @@ class CreateCharacter {
         return character
     }
 }
+*/

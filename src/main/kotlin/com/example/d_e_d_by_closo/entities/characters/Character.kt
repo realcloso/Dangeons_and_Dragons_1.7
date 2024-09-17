@@ -1,36 +1,33 @@
 package com.example.d_e_d_by_closo.entities.characters
 
 import com.example.d_e_d_by_closo.strategies.behavior.atacks.iAtack
+import com.example.d_e_d_by_closo.strategies.race.iRace
 
-open class Character : iAtack {
-    var name: String = ""
-    var strength: Int = 8
-    var dexterity: Int = 8
-    var constitution: Int = 8
-    var intelligence: Int = 8
-    var wisdom: Int = 8
-    var charisma: Int = 8
-    var experiencePoints: Int = 0
-    var level: Int = 1
-    var lifePoints: Int = 10
+abstract class Character(
+    var name: String = "",
+    var strength: Int = 8,
+    var dexterity: Int = 8,
+    var constitution: Int = 8,
+    var intelligence: Int = 8,
+    var wisdom: Int = 8,
+    var charisma: Int = 8,
+    var experiencePoints: Int = 0,
+    var level: Int = 1,
+    var lifePoints: Int = 10,
+    var race: iRace,
+    var atack: iAtack,
     var active: Boolean = true
-
-    fun doAtack(atack: iAtack) {
-        atack.doAtack()
+) {
+    init {
+        applyRaceBonus()
     }
 
-    override fun doAtack() {
-        println("Ataque padrão.")
+    private fun applyRaceBonus() {
+        strength += race.strength
+        dexterity += race.dexterity
+        constitution += race.constitution
+        intelligence += race.intelligence
+        wisdom += race.wisdom
+        charisma += race.charisma
     }
-}
-
-enum class CharacterRace {
-    human,
-    elf,
-    dwarf,
-    orc,
-    gnome,
-    halfling,
-    tiefling,
-    dragonborn
 }
