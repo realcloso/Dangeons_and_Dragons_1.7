@@ -1,4 +1,4 @@
-package com.exampleb.presentation.views
+/*package com.exampleb.presentation.views
 
 import com.exampleb.presentation.viewmodels.CreateCharacter
 import com.exampleb.d_e_d_by_closo.entities.characters.Character
@@ -81,3 +81,4 @@ class Menu(private val createCharacter: CreateCharacter) {
     }
 
 }
+*/
