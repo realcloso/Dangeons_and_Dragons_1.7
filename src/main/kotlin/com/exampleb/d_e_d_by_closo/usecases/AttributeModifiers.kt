@@ -1,6 +1,7 @@
 package com.exampleb.d_e_d_by_closo.usecases
 
 object AttributeModifiers {
+    // mapof
     val modifiers = mapOf(
         1 to -5,
         2 to -4,
